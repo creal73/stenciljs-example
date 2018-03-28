@@ -25,27 +25,27 @@ declare global {
 
 
 declare global {
-  interface HTMLByeByeElement extends HTMLStencilElement {
+  interface HTMLYoLaElement extends HTMLStencilElement {
     'image': string;
     'message': string;
   }
-  var HTMLByeByeElement: {
-    prototype: HTMLByeByeElement;
-    new (): HTMLByeByeElement;
+  var HTMLYoLaElement: {
+    prototype: HTMLYoLaElement;
+    new (): HTMLYoLaElement;
   };
   interface HTMLElementTagNameMap {
-    'bye-bye': HTMLByeByeElement;
+    'yo-la': HTMLYoLaElement;
   }
   interface ElementTagNameMap {
-    'bye-bye': HTMLByeByeElement;
+    'yo-la': HTMLYoLaElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'bye-bye': JSXElements.ByeByeAttributes;
+      'yo-la': JSXElements.YoLaAttributes;
     }
   }
   namespace JSXElements {
-    export interface ByeByeAttributes extends HTMLAttributes {
+    export interface YoLaAttributes extends HTMLAttributes {
       'image'?: string;
       'message'?: string;
     }
