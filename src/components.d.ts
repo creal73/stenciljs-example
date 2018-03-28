@@ -25,29 +25,29 @@ declare global {
 
 
 declare global {
-  interface HTMLMyComponentElement extends HTMLStencilElement {
-    'first': string;
-    'last': string;
+  interface HTMLByeByeElement extends HTMLStencilElement {
+    'image': string;
+    'message': string;
   }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLByeByeElement: {
+    prototype: HTMLByeByeElement;
+    new (): HTMLByeByeElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'bye-bye': HTMLByeByeElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'bye-bye': HTMLByeByeElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'bye-bye': JSXElements.ByeByeAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface ByeByeAttributes extends HTMLAttributes {
+      'image'?: string;
+      'message'?: string;
     }
   }
 }
